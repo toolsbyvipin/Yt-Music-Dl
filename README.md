@@ -8,7 +8,8 @@ Developer	VIP_IN
 Version	2.0
 Release Date	2026
 Status	🔥 Active Development
-⚡ Key Features
+## ⚡ Key Features
+
 🎵 Download Single Songs from YouTube Music
 
 📀 Download Playlists with one click
@@ -20,47 +21,55 @@ Status	🔥 Active Development
 🎯 Hacker-style UI with custom symbols (💀🔥⚡)
 
 🚀 One-Line Installation
-Windows
+
+## Windows
 powershell
-powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/toolsbyvipin/Yt-Music-Dl/main/install.bat' -OutFile install.bat" && install.bat
-Linux
-bash
-bash <(curl -s https://raw.githubusercontent.com/toolsbyvipin/Yt-Music-Dl/main/install.sh)
+`
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/toolsbyvipin/Yt-Music-Dl/main/install.bat' -OutFile install.bat" && install.bat`
+
+## Linux
+`<(curl -s https://raw.githubusercontent.com/toolsbyvipin/Yt-Music-Dl/main/install.sh)`
 Termux (Android)
-bash
-pkg update && pkg upgrade -y && pkg install python git ffmpeg -y && git clone https://github.com/toolsbyvipin/Yt-Music-Dl.git && cd Yt-Music-Dl && pip install -r requirements.txt && python Ytdlm.py
-📦 Manual Installation
+
+`
+pkg update && pkg upgrade -y && pkg install python git ffmpeg -y && git clone https://github.com/toolsbyvipin/Yt-Music-Dl.git && cd Yt-Music-Dl && pip install -r requirements.txt && python Ytdlm.py`
+
+## 📦 Manual Installation
+
 1. Clone Repository
-bash
+`
 git clone https://github.com/toolsbyvipin/Yt-Music-Dl.git
-cd Yt-Music-Dl
-2. Install Dependencies
-bash
-pip install -r requirements.txt
-3. Install FFmpeg
+cd Yt-Music-Dl`
+3. Install Dependencies
+`
+pip install -r requirements.txt`
+4. Install FFmpeg
 Windows
 powershell
-winget install ffmpeg
+`winget install ffmpeg`
 Linux (Ubuntu/Debian)
-bash
-sudo apt update && sudo apt install ffmpeg -y
+
+`sudo apt update && sudo apt install ffmpeg -y`
 Termux
-bash
-pkg install ffmpeg -y
-4. Run
-bash
-python Ytdlm.py
+`
+pkg install ffmpeg -y`
+5. Run
+
+`python Ytdlm.py`
+
 🎯 Quick Start
 bash
 # Clone and install
+`
 git clone https://github.com/toolsbyvipin/Yt-Music-Dl.git
 cd Yt-Music-Dl
-
+`
 # Install dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 # Run the tool
-python Ytdlm.py
+`python Ytdlm.py`
+
 🎵 Audio Quality Options
 Option	Quality	Format	Bitrate
 1	Highest Quality	MP3	320 kbps
@@ -71,12 +80,14 @@ Option	Quality	Format	Bitrate
 6	Custom	User Defined	User Defined
 📁 Folder Structure
 text
+`
 D:/YT_Music/
 ├── Songs/           # Single song downloads
 ├── Playlists/       # Playlist downloads
 ├── Albums/          # Album downloads
-└── music_history.json  # Download history
-💀 Hacker UI Elements
+└── music_history.json  # Download history`
+
+## 💀 Hacker UI Elements
 Symbol	Meaning
 💀	Hacker Mode Active
 🔥	Downloading in Progress
@@ -85,18 +96,19 @@ Symbol	Meaning
 🎯	Target Selection
 🏴‍☠️	Pirate Mode
 ⚠️ Important Warnings
-text
+`text
 🔴 DO NOT GO OFFLINE DURING DOWNLOAD
 🔴 DO NOT CLOSE LAPTOP LID
 🔴 DO NOT PUT COMPUTER TO SLEEP
-🔴 DO NOT UNPLUG POWER CABLE
+🔴 DO NOT UNPLUG POWER CABLE`
+
 🛠️ Requirements
 Python Packages
-txt
+`txt
 yt-dlp>=2023.10.13
 rich>=13.7.0
 System Requirements
-Python 3.8 or higher
+Python 3.8 or higher`
 
 FFmpeg (for audio conversion)
 
@@ -105,13 +117,14 @@ Internet connection
 D: Drive (Windows) or custom directory
 
 📱 Termux Setup
-bash
+`
 pkg update && pkg upgrade -y
 pkg install python ffmpeg git -y
 git clone https://github.com/toolsbyvipin/Yt-Music-Dl.git
 cd Yt-Music-Dl
 pip install -r requirements.txt
-python Ytdlm.py
+python Ytdlm.py`
+
 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
